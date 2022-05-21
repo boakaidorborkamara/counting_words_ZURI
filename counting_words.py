@@ -1,5 +1,5 @@
-def count_words(sentence,word):
-    word_apperance = sentence.count(word)
+def count_words(text,word):
+    word_apperance = text.count(word)
     print(word_apperance)
 
-count_words("She and I are working. I love her", "I")
+count_words("I love coding because with it I am able to become innovative and impactful", "I")
