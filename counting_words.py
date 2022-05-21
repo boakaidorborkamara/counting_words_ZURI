@@ -1,7 +1,14 @@
-def count_words(text,word):
-    word_apperance = text.count(word)
-    print(word_apperance)
+def count_words(text):
+    counter = 0
+    last_letter = text[-1]
 
-#invove function
-count_words("I love coding because with it I am able to become innovative and impactful", "I")
+    for letter in text:
+        if(letter == " " or letter == last_letter):
+            counter+=1
+
+    print("There are %d words in this sentence.\n" %counter)
+
+
+# invoke function 
+count_words("Write a python program that counts and returns the number of words in a given text.")
 
